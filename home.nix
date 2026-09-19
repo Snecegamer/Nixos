@@ -43,8 +43,6 @@ in
   rofi
   flatpak
   onlyoffice-desktopeditors
-  thunar
-  gvfs
   fastfetch
   unrar
   unzip

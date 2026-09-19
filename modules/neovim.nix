@@ -4,9 +4,11 @@
   home.packages = with pkgs; [
     neovim
     ripgrep
-    nil
-    nixpkgs-fmt
-    nodejs
+    lazygit
+    luaPackages.tree-sitter-cli
     gcc16
+    fzf
+    ripgrep
+    fd
   ];
 }

@@ -18,14 +18,10 @@
    displayManager.ly.enable = true;
    flatpak.enable = true;
    gvfs.enable = true;
-   picom = {
-    enable = true;
-    backend = "glx";
-    vSync = true;
-   };
+   tumbler.enable = true;
+   picom.enable = true;
    xserver = {
     enable = true;
-    enableTearFree = true;
     autoRepeatDelay = 200;
     autoRepeatInterval = 35;
     xkb = {
@@ -44,6 +40,7 @@
   };
   programs = {
    steam.enable = true;
+   thunar.enable = true;
    java = {
     package = with pkgs; [
      jdk17
@@ -73,6 +70,7 @@
 
   fonts.packages = with pkgs; [
    iosevka-comfy.comfy
+   nerd-fonts.iosevka-term
   ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
