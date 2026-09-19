@@ -16,11 +16,9 @@ exec_always --no-startup-id picom
 # set font for i3wm (do not change pango)
 font pango:monospace 11
 
-# always execute things:
-exec_always --no-startup-id picom
-
 #execute things
-exec --no-startup-id flameshot 
+exec --no-startup-id flameshot
+exec --no-startup-id nm-applet
 
 # remove the title bar from i3
 for_window [class="^.*"] border pixel 3
