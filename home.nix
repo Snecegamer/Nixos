@@ -11,6 +11,10 @@ let
   };
 in
 {
+ imports = 
+   [
+     ./modules/neovim.nix
+   ];
  home.username = "snece";
  home.homeDirectory = "/home/snece";
  programs.git.enable = true;
@@ -33,24 +37,18 @@ in
   brave
   picom
   flameshot
+  xwallpaper
   feh
   vlc
-  xwallpaper
   rofi
   flatpak
   onlyoffice-desktopeditors
   thunar
   gvfs
   fastfetch
-  neovim
-  ripgrep
-  nil
-  nixpkgs-fmt
-  nodejs
-  gcc
   unrar
   unzip
-  vscode
-  obsidian
+  networkmanagerapplet
+  arduino-ide
  ];
 }

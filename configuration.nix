@@ -11,7 +11,6 @@
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
-
   time.timeZone = "America/Sao_Paulo";
  
  console.useXkbConfig = true;
@@ -33,7 +32,7 @@
      layout = "br";
      variant = "abnt2";
     };
-    displayManager.sessionCommands = "xwallpaper --zoom ~/nixos-dotfiles/walls/wall3.jpg";
+    displayManager.sessionCommands = "xwallpaper --zoom ~/nixos-dotfiles/walls/wall1.jpg";
     windowManager.i3 = {
      enable = true;
      extraPackages = with pkgs; [
@@ -67,11 +66,9 @@
 
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    vim
     wget
     kitty
     git
-    flameshot
   ];
 
   fonts.packages = with pkgs; [
